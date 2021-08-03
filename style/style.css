@@ -129,12 +129,10 @@ header h1 {
   color: white;
   width: 800px;
 }
-.landing img {
+.landing iframe {
   margin: 0 auto;
   border: 5px solid #f35b8e;
   border-radius: 5px;
-  width: 766px;
-  height: 430px;
 }
 .landing .coming {
   font-size: 40px;
@@ -283,6 +281,7 @@ header h1 {
   font-family: "Beachday", letterbat;
   font-size: 38px;
   margin: 0;
+  letter-spacing: 1.5px;
 }
 
 footer {

@@ -153,12 +153,10 @@ header{
     padding: 40px 5px 0px 5px;
     color: white;
     width: 800px;
-    img{
+    iframe{
         margin: 0 auto;
         border: 5px solid $pink;
         border-radius: $radiusSmall;
-        width: 766px;
-        height: 430px;
     }
 
     .coming{
@@ -341,6 +339,7 @@ header{
             font-family: $fontFrens;
             font-size: 38px;
             margin: 0;
+            letter-spacing: 1.5px;
         }
     }
 }

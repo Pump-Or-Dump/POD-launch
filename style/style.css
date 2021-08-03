@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap");
+@font-face {
+  font-family: Beachday;
+  src: url("../assets/fonts/beachday.ttf");
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+.headerContainer {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Baloo chettan 2", cursive;
+}
+
+header {
+  padding-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+header h1 {
+  width: 340px;
+  height: 242px;
+  background-image: url("../img/PD_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0;
+}
+
+/*SOCIAL MEDIA BUTTONS*/
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.socialButton {
+  border-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  width: 206px;
+  height: 55px;
+  font-family: "Baloo chettan 2", cursive;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px 110px 30px;
+  position: relative;
+  text-decoration: none;
+}
+.socialButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(180deg, rgba(51, 147, 223, 0.6), rgba(79, 68, 204, 0.6));
+  background-color: rgba(51, 147, 223, 0.6);
+  mix-blend-mode: multiply;
+  border-radius: 5px;
+  z-index: 1;
+}
+.socialButton:hover {
+  transform: rotate(-8deg);
+}
+.socialButton:visited {
+  color: white;
+}
+.socialButton span {
+  position: relative;
+  z-index: 2;
+  color: white;
+  mix-blend-mode: lighten;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialButton img {
+  margin-right: 15px;
+}
+
+.buttonContainer {
+  position: relative;
+}
+
+.pinkRect {
+  width: 231px;
+  height: 64px;
+  background-color: rgba(252, 138, 178, 0.6);
+  border-radius: 5px;
+  position: absolute;
+  left: 17px;
+  top: -4px;
+  transform: rotate(-8deg);
+  z-index: 0;
+}
+
+/*LANDING SECTION/VIDEO*/
+.background {
+  margin: 0 auto;
+  margin-top: -140px;
+  padding: 120px 0 40px 0;
+  background-image: url("../img/bubbles.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55% 0%;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.landing {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 5px 0px 5px;
+  color: white;
+  width: 800px;
+}
+.landing img {
+  margin: 0 auto;
+  border: 5px solid #f35b8e;
+  border-radius: 5px;
+  width: 766px;
+  height: 430px;
+}
+.landing .coming {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.landing h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: -8px 0 40px 0;
+}
+.landing p {
+  font-size: 20px;
+  text-align: left;
+  padding: 0 15px 15px 15px;
+}
+
+/*MAIN SECTION*/
+.mainContent, .teammembers .teamContainer {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 5px 25px 5px;
+}
+.mainContent h3, .teammembers .teamContainer h3 {
+  color: #f35b8e;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.mainContent h4, .teammembers .teamContainer h4 {
+  color: #f35b8e;
+  font-size: 28px;
+  font-weight: normal;
+}
+.mainContent .feature, .teammembers .teamContainer .feature {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 50px 20px 65px 20px;
+}
+.mainContent .feature img, .teammembers .teamContainer .feature img {
+  width: 436px;
+  height: 243px;
+}
+.mainContent .feature .broadcast, .teammembers .teamContainer .feature .broadcast {
+  border: 5px solid #f35b8e;
+  border-radius: 5px;
+}
+.mainContent .feature .featureText, .teammembers .teamContainer .feature .featureText {
+  width: 436px;
+  font-size: 20px;
+  margin: -10px 0 30px 0;
+}
+.mainContent .feature .featureText p, .teammembers .teamContainer .feature .featureText p {
+  margin-top: -30px;
+}
+
+.teammembers {
+  background-color: #e3e6e9;
+  margin: 0 auto;
+}
+.teammembers .teamContainer {
+  padding-top: 5px;
+}
+.teammembers .openPositions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  margin: -25px 0 25px 0;
+}
+.teammembers .openPositions div {
+  margin: 0 20px;
+}
+.teammembers .openPositions p {
+  margin: -30px 0 25px 0;
+}
+
+.connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border: 12px solid #f35b8e;
+  border-radius: 45px;
+  margin: 110px 0 40px 0;
+  padding-right: 40px;
+  position: relative;
+  background-image: linear-gradient(180deg, white, white, white, white, white, white, #f35b8e);
+  background-position: 0% 100%;
+}
+.connect h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin: 0 20px 0 30px;
+}
+.connect .socialButton {
+  margin: 0 10px -40px 30px;
+}
+.connect .buttonContainer {
+  margin: 50px 5px 50px 5px;
+}
+
+/*FOOTER*/
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: white;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  width: 1170px;
+  font-size: 14px;
+}
+.footerContent .flex {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.footerContent .footerLinks {
+  width: 480px;
+}
+.footerContent .footerLinks a {
+  color: white;
+  margin-right: 10px;
+}
+.footerContent .footerLinks a:hover {
+  color: #e3e6e9;
+}
+.footerContent .footerLinks a:visited {
+  color: white;
+}
+.footerContent .frens p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 0 -10px 0;
+}
+.footerContent .frens h5 {
+  font-family: "Beachday", letterbat;
+  font-size: 38px;
+  margin: 0;
+}
+
+footer {
+  background-image: linear-gradient(180deg, #3392de, #322a8f);
+}/*# sourceMappingURL=style.css.map */

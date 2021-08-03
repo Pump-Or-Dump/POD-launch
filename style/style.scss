@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
+@font-face {
+    font-family: Beachday;
+    src: url('../assets/fonts/beachday.ttf');
+}
+
+$fontMain: "Baloo chettan 2", cursive;
+$fontFrens: "Beachday", letterbat;
+$blueOpacity: rgba(51, 147, 223, 0.6);
+$darkBlueOpacity: rgba(79, 68, 204, 0.6); 
+$lighBlue: #3392de;
+$darkBlue: #322a8f; 
+$pink: #f35b8e;
+$lightPink: rgba(252, 138, 178, 0.6);
+$radiusSmall: 5px;
+$radiusBig: 45px;
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
+/*HEADER*/
+
+.headerContainer{
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+body{
+    margin: 0 auto;
+    font-family: $fontMain;
+}
+
+header{
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    h1{
+        width: 340px;
+        height: 242px;
+        background-image: url('../img/PD_logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        font-size: 0;
+    }
+
+}
+
+/*SOCIAL MEDIA BUTTONS*/
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+
+}
+
+.socialButton{
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 206px;
+    height: 55px;
+    font-family: $fontMain;
+    border-radius: $radiusSmall;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px 110px 30px;
+    position: relative;
+    text-decoration: none;
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(180deg, $blueOpacity, $darkBlueOpacity);
+        background-color: $blueOpacity;
+        mix-blend-mode: multiply;
+        border-radius: $radiusSmall;
+        z-index: 1;
+    }
+        
+    &:hover{
+        transform: rotate(-8deg);
+    }
+
+    &:visited{
+        color: white;
+    }
+
+    span{
+        position: relative;
+		z-index: 2;
+        color: white;
+        mix-blend-mode: lighten;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img{
+        margin-right: 15px;
+    }
+}
+
+.buttonContainer{
+    position: relative;
+}
+
+
+.pinkRect{
+    width: 231px;
+    height: 64px;
+    background-color: $lightPink;
+    border-radius: $radiusSmall;
+    position: absolute;
+    left: 17px;
+    top: -4px;
+    transform: rotate(-8deg);
+    z-index: 0;
+}
+
+/*LANDING SECTION/VIDEO*/
+
+.background{
+    margin: 0 auto;
+    margin-top: -140px;
+    padding: 120px 0 40px 0;
+    background-image: url('../img/bubbles.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 0%;
+    width: 100vw;
+    height: fit-content;
+}
+
+
+.landing{
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 5px 0px 5px;
+    color: white;
+    width: 800px;
+    img{
+        margin: 0 auto;
+        border: 5px solid $pink;
+        border-radius: $radiusSmall;
+        width: 766px;
+        height: 430px;
+    }
+
+    .coming{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 40px;
+        font-weight: bolder;
+        margin: -8px 0 40px 0;
+    }
+
+    p{
+        font-size: 20px;
+        text-align: left;
+        padding: 0 15px 15px 15px;
+    }
+}
+
+/*MAIN SECTION*/
+
+.mainContent{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 5px 25px 5px;
+
+    h3{
+        color: $pink;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    h4{
+        color: $pink;
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    .feature{
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin: 50px 20px 65px 20px;
+
+
+        img{
+            width: 436px;
+            height: 243px;
+        }
+
+        .broadcast{
+            border: 5px solid $pink;
+            border-radius: $radiusSmall;
+        }
+
+
+        .featureText{
+            width: 436px;
+            font-size: 20px;
+            margin: -10px 0 30px 0;
+
+            p{
+                margin-top: -30px;
+            }
+        }
+    }
+}
+
+.teammembers{
+
+    background-color: #e3e6e9;
+    margin: 0 auto;
+
+    .teamContainer{
+        @extend .mainContent;
+        padding-top: 5px;
+    }
+    
+    .openPositions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        margin: -25px 0 25px 0;
+
+        div{
+            margin: 0 20px;
+        }
+
+        p{
+            margin: -30px 0 25px 0;
+        }
+    }
+}
+
+.connect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: 12px solid $pink;
+    border-radius: $radiusBig;
+    margin: 110px 0 40px 0;
+    padding-right: 40px; 
+    position: relative;
+    background-image: linear-gradient(180deg, white, white, white, white, white, white, $pink);
+    background-position: 0% 100%;
+
+    h3{
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        margin: 0 20px 0 30px;
+    }
+
+    .socialButton{
+        margin: 0 10px -40px 30px;
+    }
+
+    .buttonContainer{
+        margin: 50px 5px 50px 5px;
+    }
+
+}
+
+
+
+/*FOOTER*/
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    color: white;
+    padding: 20px 0 20px 0;
+    margin: 0 auto;
+    width: 1170px;
+    font-size: 14px;
+
+    .flex{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+    .footerLinks{
+        width: 480px;
+
+        a{
+            color: white;
+            margin-right: 10px;
+        }
+
+        a:hover{
+             color: #e3e6e9;
+        }
+
+        a:visited{
+            color: white;
+        }
+
+    }
+
+    .frens{
+        p{
+            width: fit-content;
+            margin: 10px 0 -10px 0;
+        }
+
+        h5{
+            font-family: $fontFrens;
+            font-size: 38px;
+            margin: 0;
+        }
+    }
+}
+
+footer{
+    background-image: linear-gradient(180deg, $lighBlue, $darkBlue);
+}

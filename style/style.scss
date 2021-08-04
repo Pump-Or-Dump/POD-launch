@@ -15,12 +15,12 @@ $lightPink: rgba(252, 138, 178, 0.6);
 $radiusSmall: 5px;
 $radiusBig: 45px;
 
-/*
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box; 
     box-sizing: border-box;
-  }*/
+  }
 
 /*HEADER*/
 
@@ -133,6 +133,21 @@ header{
     z-index: 0;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 45px;
+    height: 6px;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $pink;
+    border-radius: 2px;
+}
+
 /*LANDING SECTION/VIDEO*/
 
 .background{
@@ -143,7 +158,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 55% 0%;
-    width: 100%;
+    width: 99vw;
     height: fit-content;
 }
 
@@ -347,5 +362,59 @@ header{
 
 footer{
     background-image: linear-gradient(180deg, $lighBlue, $darkBlue);
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+
+    .headerContainer{
+        width: 80vw;
+    }
+
+    header {
+
+        h1{
+            width: 255px;
+            height: 181px;
+            align-self: flex-start;
+        }
+
+    }
+
+    .buttons {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        transition: 0.3s;
+    }
+    
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .buttons.active {
+        left: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(14px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-14px) rotate(-45deg);
+    }
+
 }
 

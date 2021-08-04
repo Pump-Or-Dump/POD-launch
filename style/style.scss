@@ -379,9 +379,7 @@ footer{
             align-self: flex-start;
         }
 
-    }
-
-    .buttons {
+        .buttons {
         position: fixed;
         left: -100%;
         top: 0;
@@ -391,13 +389,42 @@ footer{
         height: 100%;
         margin: 0 auto;
         transition: 0.3s;
+        }
+
     }
-    
 
     .hamburger {
         display: block;
         cursor: pointer;
-        position: fixed;
+    }
+
+
+    .background{
+        width: 100vw;
+    }
+
+    .landing{
+        width: 85vw;
+
+        .coming{
+            font-size: 34x;
+            margin-bottom: 10px;
+        }
+    
+        h2{
+            font-size: 34px;
+        }
+    
+        p{
+            font-size: 20px;
+            text-align: left;
+            padding: 0 15px 15px 15px;
+        }
+
+        iframe{
+            width: 640px;
+            height: 360px;
+        }
     }
 
     .buttons.active {
@@ -416,5 +443,87 @@ footer{
         transform: translateY(-14px) rotate(-45deg);
     }
 
+}
+
+@media screen and (max-width: 480px) {
+
+    .headerContainer{
+        width: 80vw;
+    }
+
+
+    header {
+
+        h1{
+            width: 170px;
+            height: 120px;
+        }
+
+        .buttons {
+            position: fixed;
+            left: -100%;
+            top: 0;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            transition: 0.3s;
+            }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            margin-top: -40px;
+        }
+    
+    }
+
+    .buttons.active {
+        left: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(14px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-14px) rotate(-45deg);
+    }
+
+    .background{
+        margin-top: -80px;
+        width: 100vw;
+    }
+
+    .landing{
+        width: 85vw;
+        padding: 15px 0 0 0;
+        .coming{
+            font-size: 30x;
+            margin-bottom: 10px;
+        }
+    
+        h2{
+            font-size: 30px;
+        }
+    
+        p{
+            font-size: 18px;
+            text-align: left;
+            padding: 0 0 0 15px;
+        }
+
+        iframe{
+            width: 426px;
+            height: 240px;
+            margin-left: -10px;
+        }
+    }
+    
 }
 

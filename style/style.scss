@@ -15,11 +15,12 @@ $lightPink: rgba(252, 138, 178, 0.6);
 $radiusSmall: 5px;
 $radiusBig: 45px;
 
+/*
 *, *:before, *:after {
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box; 
     box-sizing: border-box;
-  }
+  }*/
 
 /*HEADER*/
 
@@ -34,7 +35,7 @@ body{
 }
 
 header{
-    padding-top: 65px;
+    padding-top: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +143,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 55% 0%;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 

@@ -205,28 +205,6 @@ header h1 {
   margin-top: -30px;
 }
 
-.teammembers {
-  background-color: #e3e6e9;
-  margin: 0 auto;
-}
-.teammembers .teamContainer {
-  padding-top: 5px;
-}
-.teammembers .openPositions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: left;
-  margin: -25px 0 25px 0;
-}
-.teammembers .openPositions div {
-  margin: 0 20px;
-}
-.teammembers .openPositions p {
-  margin: -30px 0 25px 0;
-}
-
 .connect {
   display: flex;
   justify-content: space-between;
@@ -251,6 +229,28 @@ header h1 {
 }
 .connect .buttonContainer {
   margin: 50px 5px 50px 5px;
+}
+
+.teammembers {
+  background-color: #e3e6e9;
+  margin: 0 auto;
+}
+.teammembers .teamContainer {
+  padding-top: 5px;
+}
+.teammembers .openPositions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  margin: -25px 0 25px 0;
+}
+.teammembers .openPositions div {
+  margin: 0 20px;
+}
+.teammembers .openPositions p {
+  margin: -30px 0 25px 0;
 }
 
 /*FOOTER*/
@@ -302,9 +302,9 @@ footer {
   background-image: linear-gradient(180deg, #3392de, #322a8f);
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .headerContainer {
-    width: 80vw;
+    width: 90vw;
   }
 
   header h1 {
@@ -327,14 +327,16 @@ footer {
   .hamburger {
     display: block;
     cursor: pointer;
+    margin: -30px 20px 0 0;
   }
 
   .background {
     width: 100vw;
+    margin-top: -100px;
   }
 
   .landing {
-    width: 85vw;
+    width: 90vw;
   }
   .landing .coming {
     font-size: 34x;
@@ -344,97 +346,183 @@ footer {
     font-size: 34px;
   }
   .landing p {
-    font-size: 20px;
-    text-align: left;
-    padding: 0 15px 15px 15px;
-  }
-  .landing iframe {
-    width: 640px;
-    height: 360px;
-  }
-
-  .buttons.active {
-    left: 0;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-14px) rotate(-45deg);
-  }
-}
-@media screen and (max-width: 480px) {
-  .headerContainer {
-    width: 80vw;
-  }
-
-  header h1 {
-    width: 170px;
-    height: 120px;
-  }
-  header .buttons {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    transition: 0.3s;
-  }
-  header .hamburger {
-    display: block;
-    cursor: pointer;
-    margin-top: -40px;
-  }
-
-  .buttons.active {
-    left: 0;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-14px) rotate(-45deg);
-  }
-
-  .background {
-    margin-top: -80px;
-    width: 100vw;
-  }
-
-  .landing {
-    width: 85vw;
-    padding: 15px 0 0 0;
-  }
-  .landing .coming {
-    font-size: 30x;
-    margin-bottom: 10px;
-  }
-  .landing h2 {
-    font-size: 30px;
-  }
-  .landing p {
     font-size: 18px;
     text-align: left;
-    padding: 0 0 0 15px;
+    padding: 0 5px 15px 5px;
   }
   .landing iframe {
     width: 426px;
     height: 240px;
     margin-left: -10px;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  .buttons.active {
+    left: 0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+  }
+
+  .mainContent, .teammembers .teamContainer {
+    width: 90vw;
+    padding: 30px 5px 25px 5px;
+  }
+  .mainContent h3, .teammembers .teamContainer h3 {
+    font-size: 32px;
+  }
+  .mainContent h4, .teammembers .teamContainer h4 {
+    font-size: 24px;
+  }
+  .mainContent .feature, .teammembers .teamContainer .feature {
+    flex-flow: column;
+    justify-content: center;
+    margin: 25px 10px 65px 10px;
+  }
+  .mainContent .feature img, .teammembers .teamContainer .feature img {
+    margin: 15px 0;
+  }
+  .mainContent .feature .featureText, .teammembers .teamContainer .feature .featureText {
+    width: 436px;
+    font-size: 20px;
+    margin: -10px 0 30px 0;
+  }
+  .mainContent .feature .featureText p, .teammembers .teamContainer .feature .featureText p {
+    margin-top: -25px;
+  }
+  .mainContent .reverse, .teammembers .teamContainer .reverse {
+    flex-flow: column-reverse;
+  }
+
+  .connect {
+    flex-flow: column;
+    padding: 30px 10px 50px 10px;
+    background-position: 0% 100%;
+  }
+  .connect h3 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .teammembers .openPositions {
+    flex-flow: column;
+  }
+  .teammembers .openPositions h3 {
+    font-size: 28px;
+    margin-top: -15px;
+  }
+  .teammembers .openPositions div {
+    margin: 0 20px;
+  }
+
+  .footerContent {
+    flex-flow: column;
+    width: 90vw;
+  }
+
+  .footerLinks {
+    width: 400px;
+    padding: 0 20px;
+  }
+  .footerLinks a {
+    color: white;
+    margin-right: 10px;
+  }
+  .footerLinks a:hover {
+    color: #e3e6e9;
+  }
+  .footerLinks a:visited {
+    color: white;
+  }
+
+  .frens {
+    align-self: flex-start;
+  }
+}
+/*@media screen and (max-width: 480px) {
+
+    .headerContainer{
+        width: 90vw;
+    }
+
+
+    header {
+
+        h1{
+            width: 170px;
+            height: 120px;
+        }
+
+        .buttons {
+            position: fixed;
+            left: -100%;
+            top: 0;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            transition: 0.3s;
+            }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            margin-top: -40px;
+        }
+
+    }
+
+    .buttons.active {
+        left: 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(14px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-14px) rotate(-45deg);
+    }
+
+    .background{
+        margin-top: -80px;
+        width: 100vw;
+    }
+
+    .landing{
+        width: 90vw;
+        padding: 15px 0 0 0;
+        .coming{
+            font-size: 30x;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 18px;
+            text-align: left;
+            padding: 0 0 0 15px;
+        }
+
+
+    }
+
+
+
+}*//*# sourceMappingURL=style.css.map */

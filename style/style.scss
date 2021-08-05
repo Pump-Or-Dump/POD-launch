@@ -245,34 +245,6 @@ header{
     }
 }
 
-.teammembers{
-
-    background-color: #e3e6e9;
-    margin: 0 auto;
-
-    .teamContainer{
-        @extend .mainContent;
-        padding-top: 5px;
-    }
-    
-    .openPositions{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: left;
-        margin: -25px 0 25px 0;
-
-        div{
-            margin: 0 20px;
-        }
-
-        p{
-            margin: -30px 0 25px 0;
-        }
-    }
-}
-
 .connect{
     display: flex;
     justify-content: space-between;
@@ -301,6 +273,34 @@ header{
         margin: 50px 5px 50px 5px;
     }
 
+}
+
+.teammembers{
+
+    background-color: #e3e6e9;
+    margin: 0 auto;
+
+    .teamContainer{
+        @extend .mainContent;
+        padding-top: 5px;
+    }
+    
+    .openPositions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        margin: -25px 0 25px 0;
+
+        div{
+            margin: 0 20px;
+        }
+
+        p{
+            margin: -30px 0 25px 0;
+        }
+    }
 }
 
 
@@ -364,11 +364,13 @@ footer{
     background-image: linear-gradient(180deg, $lighBlue, $darkBlue);
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+
+
+@media screen and (max-width: 768px) {
 
 
     .headerContainer{
-        width: 80vw;
+        width: 90vw;
     }
 
     header {
@@ -396,15 +398,17 @@ footer{
     .hamburger {
         display: block;
         cursor: pointer;
+        margin: -30px 20px 0 0;
     }
 
 
     .background{
         width: 100vw;
+        margin-top: -100px;
     }
 
     .landing{
-        width: 85vw;
+        width: 90vw;
 
         .coming{
             font-size: 34x;
@@ -416,14 +420,15 @@ footer{
         }
     
         p{
-            font-size: 20px;
+            font-size: 18px;
             text-align: left;
-            padding: 0 15px 15px 15px;
+            padding: 0 5px 15px 5px;
         }
 
         iframe{
-            width: 640px;
-            height: 360px;
+            width: 426px;
+            height: 240px;
+            margin-left: -10px;
         }
     }
 
@@ -443,12 +448,112 @@ footer{
         transform: translateY(-14px) rotate(-45deg);
     }
 
+    .mainContent{
+        width: 90vw;
+        padding: 30px 5px 25px 5px;
+    
+        h3{
+            font-size: 32px;
+        }
+    
+        h4{
+            font-size: 24px;
+        }
+    
+        .feature{
+            flex-flow: column;
+            justify-content: center;
+            margin: 25px 10px 65px 10px;
+    
+    
+            img{
+                margin: 15px 0;
+            }
+    
+    
+            .featureText{
+                width: 436px;
+                font-size: 20px;
+                margin: -10px 0 30px 0;
+    
+                p{
+                    margin-top: -25px;
+                }
+            }
+        }
+
+        .reverse{
+            flex-flow: column-reverse;
+        }
+    }
+
+    .connect{
+        flex-flow: column;
+        padding: 30px 10px 50px 10px;
+        background-position: 0% 100%;
+    
+        h3{
+            font-size: 28px;
+            margin: 0;
+        }
+    
+    }
+
+    .teammembers{
+
+        
+        .openPositions{
+            
+            flex-flow: column;
+
+            h3{
+                font-size: 28px;
+                margin-top: -15px;
+            }
+    
+            div{
+                margin: 0 20px;
+            }
+    
+        }
+    }
+
+    .footerContent{
+        flex-flow: column;
+        width: 90vw;
+    }
+    
+
+    .footerLinks{
+        width: 400px;
+        padding: 0 20px;
+
+        a{
+            color: white;
+            margin-right: 10px;
+        }
+
+        a:hover{
+             color: #e3e6e9;
+        }
+
+        a:visited{
+            color: white;
+        }
+
+    }
+
+    .frens{
+        align-self: flex-start;
+    }
+
 }
 
-@media screen and (max-width: 480px) {
+
+/*@media screen and (max-width: 480px) {
 
     .headerContainer{
-        width: 80vw;
+        width: 90vw;
     }
 
 
@@ -501,7 +606,7 @@ footer{
     }
 
     .landing{
-        width: 85vw;
+        width: 90vw;
         padding: 15px 0 0 0;
         .coming{
             font-size: 30x;
@@ -518,12 +623,10 @@ footer{
             padding: 0 0 0 15px;
         }
 
-        iframe{
-            width: 426px;
-            height: 240px;
-            margin-left: -10px;
-        }
+
     }
+
+
     
-}
+}*/
 

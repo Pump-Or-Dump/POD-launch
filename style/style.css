@@ -230,6 +230,13 @@ header h1 {
 .connect .buttonContainer {
   margin: 50px 5px 50px 5px;
 }
+.connect .buttonsConnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
 
 .teammembers {
   background-color: #e3e6e9;

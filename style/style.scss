@@ -61,6 +61,7 @@ header{
     align-items: center;
     align-content: center;
     margin-bottom: 20px;
+    z-index: 15;
 
 }
 
@@ -460,6 +461,10 @@ footer{
             padding: 0 5px 15px 5px;
         }
 
+        iframe{
+            z-index: 0;
+        }
+
     }
 
     .buttons.active {
@@ -557,6 +562,7 @@ footer{
 
     .footerContent{
         flex-flow: column;
+        justify-content: center;
         width: 90%;
     }
     
@@ -577,6 +583,8 @@ footer{
         a:visited{
             color: white;
         }
+
+        margin: 0 5px;
 
     }
 

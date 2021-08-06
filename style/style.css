@@ -42,6 +42,7 @@ header h1 {
   align-items: center;
   align-content: center;
   margin-bottom: 20px;
+  z-index: 15;
 }
 
 .socialButton {
@@ -381,6 +382,9 @@ footer {
     text-align: left;
     padding: 0 5px 15px 5px;
   }
+  .landing iframe {
+    z-index: 0;
+  }
 
   .buttons.active {
     left: 0;
@@ -457,12 +461,14 @@ footer {
 
   .footerContent {
     flex-flow: column;
+    justify-content: center;
     width: 90%;
   }
 
   .footerLinks {
     width: 90%;
     padding: 0 20px;
+    margin: 0 5px;
   }
   .footerLinks a {
     color: white;

@@ -142,9 +142,27 @@ header h1 {
   padding: 40px 5px 0px 5px;
   color: white;
   width: 800px;
+  /*iframe{
+      margin: 0 auto;
+      border: 5px solid $pink;
+      border-radius: $radiusSmall;
+      width: 98%;
+      height: auto;
+  }*/
 }
-.landing iframe {
+.landing .videoContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
   margin: 0 auto;
+}
+.landing .videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
   border: 5px solid #f35b8e;
   border-radius: 5px;
 }
@@ -311,7 +329,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   .headerContainer {
-    width: 90vw;
+    width: 95%;
   }
 
   header h1 {
@@ -338,29 +356,25 @@ footer {
   }
 
   .background {
-    width: 100vw;
+    width: 100%;
     margin-top: -100px;
   }
 
   .landing {
-    width: 90vw;
+    width: 90%;
   }
   .landing .coming {
-    font-size: 34x;
-    margin-bottom: 10px;
+    font-size: 30x;
+    margin: 10px 0 10px 0;
   }
   .landing h2 {
-    font-size: 34px;
+    font-size: 30px;
+    margin-top: 10px;
   }
   .landing p {
     font-size: 18px;
     text-align: left;
     padding: 0 5px 15px 5px;
-  }
-  .landing iframe {
-    width: 426px;
-    height: 240px;
-    margin-left: -10px;
   }
 
   .buttons.active {
@@ -380,11 +394,11 @@ footer {
   }
 
   .mainContent, .teammembers .teamContainer {
-    width: 90vw;
-    padding: 30px 5px 25px 5px;
+    width: 90%;
+    padding: 30px 0 25px 0;
   }
   .mainContent h3, .teammembers .teamContainer h3 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .mainContent h4, .teammembers .teamContainer h4 {
     font-size: 24px;
@@ -396,11 +410,13 @@ footer {
   }
   .mainContent .feature img, .teammembers .teamContainer .feature img {
     margin: 15px 0;
+    width: 98%;
+    height: auto;
   }
   .mainContent .feature .featureText, .teammembers .teamContainer .feature .featureText {
-    width: 436px;
-    font-size: 20px;
-    margin: -10px 0 30px 0;
+    width: 98%;
+    font-size: 18px;
+    margin: -10px 0 5px 0;
   }
   .mainContent .feature .featureText p, .teammembers .teamContainer .feature .featureText p {
     margin-top: -25px;
@@ -418,6 +434,9 @@ footer {
     font-size: 28px;
     margin: 0;
   }
+  .connect .buttonsConnect {
+    flex-direction: column;
+  }
 
   .teammembers .openPositions {
     flex-flow: column;
@@ -427,16 +446,17 @@ footer {
     margin-top: -15px;
   }
   .teammembers .openPositions div {
+    width: 99%;
     margin: 0 20px;
   }
 
   .footerContent {
     flex-flow: column;
-    width: 90vw;
+    width: 90%;
   }
 
   .footerLinks {
-    width: 400px;
+    width: 95%;
     padding: 0 20px;
   }
   .footerLinks a {

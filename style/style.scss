@@ -193,6 +193,7 @@ header{
         height: 99%;
         border: 5px solid $pink;
         border-radius: $radiusSmall;
+        z-index: 0;
     }
 
     .coming{
@@ -357,7 +358,7 @@ header{
 
 
     .footerLinks{
-        width: 480px;
+        width: 470px;
 
         a{
             color: white;
@@ -391,6 +392,7 @@ header{
 
 footer{
     background-image: linear-gradient(180deg, $lighBlue, $darkBlue);
+    width: 100%;
 }
 
 
@@ -560,7 +562,7 @@ footer{
     
 
     .footerLinks{
-        width: 99%;
+        width: 90%;
         padding: 0 20px;
 
         a{

@@ -355,11 +355,12 @@ header{
     align-content: center;
     align-items: center;
     margin-top: 5px;
+    flex-wrap:wrap;
 }
 
 
     .footerLinks{
-        width: 470px;
+        width: 100%;
 
         a{
             color: white;

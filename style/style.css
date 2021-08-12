@@ -4,8 +4,6 @@
   src: url("../assets/fonts/beachday.ttf");
 }
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -18,23 +16,6 @@
 body {
   margin: 0 auto;
   font-family: "Baloo chettan 2", cursive;
-}
-
-header {
-  padding-top: 55px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-header h1 {
-  width: 340px;
-  height: 242px;
-  background-image: url("../img/PD_logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  font-size: 0;
 }
 
 /*SOCIAL MEDIA BUTTONS*/
@@ -119,10 +100,35 @@ header h1 {
   width: 45px;
   height: 6px;
   margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #f35b8e;
   border-radius: 2px;
+}
+
+header {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  /*SMALLER BUTTON STYLE FOR HEADER*/
+}
+header h1 {
+  width: 340px;
+  height: 242px;
+  background-image: url("../img/PD_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0;
+}
+header .socialButton {
+  width: 185px;
+  height: 50px;
+}
+header .pinkRect {
+  width: 208px;
+  height: 57px;
 }
 
 /*LANDING SECTION/VIDEO*/
@@ -135,6 +141,8 @@ header h1 {
   background-size: cover;
   background-position: 55% 0%;
   width: 99vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -315,6 +323,8 @@ header h1 {
   color: white;
 }
 .footerContent .frens p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 10px 0 -10px 0;
 }
@@ -484,6 +494,4 @@ footer {
   .frens {
     align-self: flex-start;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

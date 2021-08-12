@@ -134,14 +134,18 @@ header{
     z-index: 0;
 }
 
-.smallBlue{
-    width: 185px;
-    height: 50px;
-}
+/* SMALLER HEADER BUTTONS */
 
-.smallPink{
+.pinkRectSmall{
+    @extend .pinkRect;
     width: 208px;
     height: 57px;
+}
+
+.socialButtonSmall{
+    @extend .socialButton;
+    width: 185px;
+    height: 50px;
 }
 
 .hamburger {

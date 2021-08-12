@@ -18,6 +18,23 @@ body {
   font-family: "Baloo chettan 2", cursive;
 }
 
+header {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+header h1 {
+  width: 340px;
+  height: 242px;
+  background-image: url("../img/PD_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0;
+}
+
 /*SOCIAL MEDIA BUTTONS*/
 .buttons {
   display: flex;
@@ -91,6 +108,16 @@ body {
   z-index: 0;
 }
 
+.smallBlue {
+  width: 185px;
+  height: 50px;
+}
+
+.smallPink {
+  width: 208px;
+  height: 57px;
+}
+
 .hamburger {
   display: none;
 }
@@ -103,32 +130,6 @@ body {
   transition: all 0.3s ease-in-out;
   background-color: #f35b8e;
   border-radius: 2px;
-}
-
-header {
-  padding-top: 55px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  /*SMALLER BUTTON STYLE FOR HEADER*/
-}
-header h1 {
-  width: 340px;
-  height: 242px;
-  background-image: url("../img/PD_logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  font-size: 0;
-}
-header .socialButton {
-  width: 185px;
-  height: 50px;
-}
-header .pinkRect {
-  width: 208px;
-  height: 57px;
 }
 
 /*LANDING SECTION/VIDEO*/
